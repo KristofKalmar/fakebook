@@ -1,0 +1,99 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  background-color: #f9f9f9;
+  min-height: calc(100% - 64px);
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 768px;
+  padding-bottom: 16px;
+}
+
+mat-card {
+  background-color: #fff;
+  border-top: none;
+  box-shadow: none;
+  border-radius: 0;
+  overflow: hidden;
+  border-radius: 0 0 16px 16px;
+}
+
+.banner {
+  width: calc(100% + 32px);
+  height: 256px;
+  object-fit: cover;
+  margin-top: -16px;
+  margin-left: -16px;
+  margin-right: -16px;
+  margin-bottom: -64px;
+}
+
+.profile-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.profile-texts {
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+  margin-left: 16px;
+}
+
+.profile-name {
+  font-size: 24px;
+}
+
+.friend-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.add-friend-dot {
+  width: 4px;
+  height: 4px;
+  background-color: #000;
+  border-radius: 50%;
+  margin: 0 8px;
+}
+
+.add-friend-button {
+  background: none;
+  border: none;
+  box-shadow: none;
+  color: #01BAEF;
+  padding: 0;
+  margin-left: auto;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.profile-friend-counter {
+  font-size: 16px;
+}
+
+.profile-picture {
+  width: 128px;
+  height: 128px;
+  border-radius: 64px;
+}
+
+@media screen and (max-width: 768px) {
+  .content-container {
+    padding: 0;
+  }
+
+  mat-card {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #dbdbdb;
+  }
+}

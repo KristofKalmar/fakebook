@@ -1,0 +1,9 @@
+<div class="container">
+  <div appPageBackground></div>
+  <div class="content-container">
+    <app-post-card></app-post-card>
+    <ng-container *ngFor="let post of server.getTopTenPosts()">
+      <app-post [post]="post.post" [comments]="post.comments" [reactions]="post.reactions" [user]="post.user" [isFriends]="true" />
+    </ng-container>
+  </div>
+</div>

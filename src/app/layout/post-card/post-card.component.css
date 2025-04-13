@@ -1,0 +1,28 @@
+mat-card {
+  margin: 8px 0;
+  background-color: #fff;
+  box-shadow: none;
+  border-radius: 16px;
+}
+
+.post-button {
+  width: 100%;
+  border-radius: 16px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background: #01BAEF;
+}
+
+@media screen and (max-width: 768px) {
+  mat-card {
+    border-bottom: 1px solid #dbdbdb;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 0;
+    margin: 0;
+    border-top: 0;
+  }
+}

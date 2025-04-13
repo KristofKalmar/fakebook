@@ -1,0 +1,29 @@
+<div class="container">
+  <div appPageBackground></div>
+  <div class="content-container">
+    <mat-card>
+      <mat-card-content>
+        <img
+          class="banner"
+          src="{{ user.bannerImage }}" />
+        <div class="profile-details">
+          <img
+            class="profile-picture"
+            src="{{ user.image }}" />
+          <div class="profile-texts">
+            <div class="profile-name">{{ user.fullName }}</div>
+            <div class="friend-container">
+              <div class="profile-friend-counter">16 barát</div>
+              <div class="add-friend-dot"></div>
+              <button class="add-friend-button">Ismerősnek jelölés</button>
+            </div>
+          </div>
+        </div>
+      </mat-card-content>
+    </mat-card>
+    <app-post-card></app-post-card>
+    <ng-container *ngFor="let post of server.getUserPosts(userId)">
+      <app-post [post]="post.post" [comments]="post.comments" [reactions]="post.reactions" [user]="post.user" [isFriends]="true" />
+    </ng-container>
+  </div>
+</div>

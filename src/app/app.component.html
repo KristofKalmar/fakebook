@@ -1,0 +1,14 @@
+<mat-tab-nav-panel #tabPanel>
+  <router-outlet>
+    <app-bottom-navigation />
+    <div class="debug-spacer">
+      <div class="debug-container">
+        !!!DEBUG!!!
+        <div class="debug-buttons-container">
+          <a mat-raised-button href="/home" class="debug-button">Főoldal</a>
+          <a mat-raised-button href="/login" class="debug-button">Bejelentkezés</a>
+        </div>
+      </div>
+    </div>
+  </router-outlet>
+</mat-tab-nav-panel>

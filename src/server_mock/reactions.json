@@ -1,0 +1,152 @@
+[
+  {
+    "isLike": true,
+    "postId": "1",
+    "userId": "10"
+  },
+  {
+    "isLike": true,
+    "postId": "1",
+    "userId": "10"
+  },
+  {
+    "isLike": true,
+    "postId": "1",
+    "userId": "6"
+  },
+  {
+    "isLike": false,
+    "postId": "1",
+    "userId": "8"
+  },
+  {
+    "isLike": false,
+    "postId": "1",
+    "userId": "1"
+  },
+  {
+    "isLike": false,
+    "postId": "2",
+    "userId": "9"
+  },
+  {
+    "isLike": false,
+    "postId": "2",
+    "userId": "2"
+  },
+  {
+    "isLike": true,
+    "postId": "2",
+    "userId": "6"
+  },
+  {
+    "isLike": true,
+    "postId": "2",
+    "userId": "10"
+  },
+  {
+    "isLike": true,
+    "postId": "2",
+    "userId": "8"
+  },
+  {
+    "isLike": false,
+    "postId": "3",
+    "userId": "7"
+  },
+  {
+    "isLike": true,
+    "postId": "3",
+    "userId": "10"
+  },
+  {
+    "isLike": false,
+    "postId": "3",
+    "userId": "6"
+  },
+  {
+    "isLike": false,
+    "postId": "4",
+    "userId": "9"
+  },
+  {
+    "isLike": false,
+    "postId": "4",
+    "userId": "5"
+  },
+  {
+    "isLike": false,
+    "postId": "4",
+    "userId": "1"
+  },
+  {
+    "isLike": true,
+    "postId": "4",
+    "userId": "10"
+  },
+  {
+    "isLike": true,
+    "postId": "5",
+    "userId": "9"
+  },
+  {
+    "isLike": true,
+    "postId": "5",
+    "userId": "8"
+  },
+  {
+    "isLike": false,
+    "postId": "5",
+    "userId": "6"
+  },
+  {
+    "isLike": false,
+    "postId": "5",
+    "userId": "2"
+  },
+  {
+    "isLike": true,
+    "postId": "7",
+    "userId": "7"
+  },
+  {
+    "isLike": true,
+    "postId": "7",
+    "userId": "9"
+  },
+  {
+    "isLike": true,
+    "postId": "7",
+    "userId": "10"
+  },
+  {
+    "isLike": false,
+    "postId": "7",
+    "userId": "5"
+  },
+  {
+    "isLike": false,
+    "postId": "15",
+    "userId": "9"
+  },
+  {
+    "isLike": true,
+    "postId": "15",
+    "userId": "5"
+  },
+  {
+    "isLike": false,
+    "postId": "15",
+    "userId": "1"
+  },
+  {
+    "isLike": true,
+    "postId": "15",
+    "userId": "8"
+  },
+  {
+    "isLike": true,
+    "postId": "9",
+    "userId": "7"
+  }
+]

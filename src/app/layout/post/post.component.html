@@ -1,0 +1,42 @@
+<mat-card>
+  <mat-card-content>
+    <div class="profile-container">
+      <img
+        src="{{ user.image }}"
+        class="profile-picture" />
+      <p class="profile-name">{{ user.fullName }}</p>
+      <div class="add-friend-container" *ngIf="!isFriends">
+        <div class="add-friend-dot"></div>
+        <button class="add-friend-button">Ismerősnek jelölés</button>
+      </div>
+    </div>
+    <p class="date-text">
+      {{ post.date | datePipe }}
+    </p>
+    <p class="paragraph" *ngIf="post.body">{{ post.body }}</p>
+    <img
+      *ngIf="post.attachment"
+      src="{{ post.attachment }}"
+      class="attachment" />
+    <div class="likes-container">
+      <button mat-raised-button class="like-button">
+        <mat-icon class="material-icons-outlined">
+          thumb_up
+        </mat-icon>
+        {{ reactions | likePipe }}
+      </button>
+      <button mat-raised-button class="like-button dislike">
+        <mat-icon class="material-icons-outlined">
+          thumb_down
+        </mat-icon>
+        {{ reactions | dislikePipe }}
+      </button>
+      <button mat-stroked-button color="accent" class="comment-button">
+        <mat-icon class="material-icons-outlined">
+          chat
+        </mat-icon>
+        Hozzászólások
+      </button>
+    </div>
+  </mat-card-content>
+</mat-card>

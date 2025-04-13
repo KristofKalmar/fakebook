@@ -1,0 +1,103 @@
+mat-card {
+  margin: 8px 0;
+  background-color: #fff;
+  box-shadow: none;
+  border-radius: 16px;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.profile-picture {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.profile-name {
+  font-size: 14px;
+  margin-left: 16px;
+}
+
+.paragraph {
+  font-size: 16px;
+}
+
+.attachment {
+  width: 100%;
+  border-radius: 16px;
+}
+
+.add-friend-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.add-friend-dot {
+  width: 4px;
+  height: 4px;
+  background-color: #000;
+  border-radius: 50%;
+  margin: 0 8px;
+}
+
+.date-text {
+  font-size: 12px;
+  color: #808080;
+}
+
+.add-friend-button {
+  background: none;
+  border: none;
+  box-shadow: none;
+  color: #01BAEF;
+  padding: 0;
+  margin-left: auto;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.likes-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 16px;
+}
+
+.like-button, .comment-button {
+  margin: 0;
+  border-radius: 16px;
+  padding: 8px 16px;
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.comment-button {
+  margin-left: auto;
+}
+
+.dislike {
+  margin-left: 16px;
+}
+
+.like-button mat-icon {
+  margin-right: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  mat-card {
+    border-bottom: 1px solid #dbdbdb;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    max-width: 100%;
+    border-radius: 0;
+    margin: 0;
+    border-top: 0;
+  }
+}

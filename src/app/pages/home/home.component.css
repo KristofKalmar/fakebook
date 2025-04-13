@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  background-color: #fff;
+  min-height: calc(100% - 64px);
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 768px;
+  padding: 16px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .content-container {
+    padding: 0;
+  }
+}

@@ -1,0 +1,82 @@
+[
+  {
+    "id": "1",
+    "username": "useralpha",
+    "fullName": "Alpha Ádám",
+    "password": "7c1f9f4e87d5d6d3cb78716765ab75f0e9a01f60e4e56f72e9296f1f3dd67ec5",
+    "image": "https://thispersondoesnotexist.com",
+    "bannerImage": "https://picsum.photos/seed/banner1/800/200"
+  },
+  {
+    "id": "2",
+    "username": "bravobela",
+    "fullName": "Bravo Béla",
+    "password": "c2b251f56dc180181db0a540a4b71e1431eb340ce2aee0d84e004efb38dcfe58",
+    "image": "https://thispersondoesnotexist.com",
+    "bannerImage": "https://picsum.photos/seed/banner2/800/200"
+  },
+  {
+    "id": "3",
+    "username": "charliececilia",
+    "fullName": "Charlie Cecília",
+    "password": "df3c501f5dd16e801310a8eaaad57ee13b4c86c26720ad67fcaf45d5c16b57e1",
+    "image": "https://thispersondoesnotexist.com",
+    "bannerImage": "https://picsum.photos/seed/banner3/800/200"
+  },
+  {
+    "id": "4",
+    "username": "deltaistvan",
+    "fullName": "Delta István",
+    "password": "7a84db6ae5e6a6f2b06f37892b42645e212b02fc2f2a1c0e179ec368054bc0a2",
+    "image": "https://thispersondoesnotexist.com",
+    "bannerImage": "https://picsum.photos/seed/banner4/800/200"
+  },
+  {
+    "id": "5",
+    "username": "echoedit",
+    "fullName": "Echo Edit",
+    "password": "93deba4b69a7ccfbd4ce16e5be8e94b845f47ae5fe233153d4a7e7c452ab700e",
+    "image": "https://thispersondoesnotexist.com",
+    "bannerImage": "https://picsum.photos/seed/banner5/800/200"
+  },
+  {
+    "id": "6",
+    "username": "foxtibor",
+    "fullName": "Fox Tibor",
+    "password": "74f0c273f121f3e4d47b1a9ae7582e75a1ae7c693508ebbe9e76329fd8b0f053",
+    "image": "https://thispersondoesnotexist.com",
+    "bannerImage": "https://picsum.photos/seed/banner6/800/200"
+  },
+  {
+    "id": "7",
+    "username": "golfgabriella",
+    "fullName": "Golf Gabriella",
+    "password": "6c21938a0ecf3bce858bd3a5bdb39d2f1eea0f2bbed5917e828f60aa985dd306",
+    "image": "https://thispersondoesnotexist.com",
+    "bannerImage": "https://picsum.photos/seed/banner7/800/200"
+  },
+  {
+    "id": "8",
+    "username": "hotelhenrik",
+    "fullName": "Hotel Henrik",
+    "password": "e123bdc6ae92869e9e48f9b5ef9f7b7f544238e89b85713b6ef409eb4f389725",
+    "image": "https://thispersondoesnotexist.com",
+    "bannerImage": "https://picsum.photos/seed/banner8/800/200"
+  },
+  {
+    "id": "9",
+    "username": "indiildiko",
+    "fullName": "Indi Ildikó",
+    "password": "8c368243df498a5bcf8cd8714ebdc9247ec20dc76a5b7e9d601b23cc0127464a",
+    "image": "https://thispersondoesnotexist.com",
+    "bannerImage": "https://picsum.photos/seed/banner9/800/200"
+  },
+  {
+    "id": "10",
+    "username": "juliettjanos",
+    "fullName": "Juliett János",
+    "password": "a3d13edcd0cd7f7c2d3a25513a6f36e96163e0d00b58bb4c780c309306c70e02",
+    "image": "https://thispersondoesnotexist.com",
+    "bannerImage": "https://picsum.photos/seed/banner10/800/200"
+  }
+]

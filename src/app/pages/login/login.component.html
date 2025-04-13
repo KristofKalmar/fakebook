@@ -1,0 +1,28 @@
+<div class="card-container">
+  <div appLogoAnimation></div>
+  <mat-card class="login-card">
+    <img ngSrc="/assets/images/logo_text.svg" class="logo-text" height="32" width="192"  alt="logo"/>
+    <h2>Bejelentkezés</h2>
+    <form>
+      <mat-form-field appearance="outline" class="form-field">
+        <mat-label>E-mail</mat-label>
+        <input matInput type="text" placeholder="Felhasználónév">
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="form-field">
+        <mat-label>Jelszó</mat-label>
+        <input matInput type="password" placeholder="Jelszó">
+      </mat-form-field>
+
+      <button mat-raised-button color="primary" class="login-button">Bejelentkezés</button>
+    </form>
+    <div class="divider-container">
+      <mat-divider></mat-divider>
+      <span class="divider-text">vagy</span>
+      <mat-divider></mat-divider>
+    </div>
+    <a routerLink="/register">
+      <button mat-stroked-button color="accent" class="register-button">Regisztráció</button>
+    </a>
+  </mat-card>
+</div>
