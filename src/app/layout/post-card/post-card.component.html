@@ -1,5 +1,5 @@
 <mat-card>
   <mat-card-content>
-    <button class="post-button" mat-raised-button>Mi jár a fejedben?</button>
+    <a class="post-button" [routerLink]="[ {outlets: { modal: 'createpost' } } ]">Mi jár a fejedben?</a>
   </mat-card-content>
 </mat-card>

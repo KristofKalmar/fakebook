@@ -1,0 +1,31 @@
+<h1 mat-dialog-title>Új bejegyzés létrehozása</h1>
+
+<div mat-dialog-content>
+  <input type="file" #fileInput accept="image/*" style="display: none" (change)="onImagePicked($event)" />
+  <div class="profile-container">
+    <img
+      src="{{ user.image }}"
+      class="profile-picture" />
+    <p class="profile-name">{{ user.fullName }}</p>
+  </div>
+  <p class="date-text">
+    {{ date }}
+  </p>
+  <mat-form-field appearance="outline" class="paragraph">
+    <mat-label>Szöveg</mat-label>
+    <input (change)="onChangeBody($event)" matInput type="text" placeholder="..." formControlName="text">
+  </mat-form-field>
+  <div class="imageUploadButtonContainer">
+    <img
+      src="{{ post.attachment }}"
+      class="attachment" />
+    <div class="imageUploadButton" (click)="fileInput.click()">
+      Feltöltés
+    </div>
+  </div>
+</div>
+
+<div mat-dialog-actions align="end">
+  <button mat-button class="cancelButton" (click)="closeModal()">Mégsem</button>
+  <button mat-raised-button color="primary" (click)="createPost()">Közzétevés</button>
+</div>

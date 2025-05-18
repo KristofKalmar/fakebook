@@ -5,10 +5,6 @@
         src="{{ user.image }}"
         class="profile-picture" />
       <p class="profile-name">{{ user.fullName }}</p>
-      <div class="add-friend-container" *ngIf="!isFriends">
-        <div class="add-friend-dot"></div>
-        <button class="add-friend-button">Ismerősnek jelölés</button>
-      </div>
     </div>
     <p class="date-text">
       {{ post.date | datePipe }}
@@ -19,7 +15,7 @@
       src="{{ post.attachment }}"
       class="attachment" />
     <div class="likes-container">
-      <button mat-raised-button class="like-button">
+      <!--<button mat-raised-button class="like-button">
         <mat-icon class="material-icons-outlined">
           thumb_up
         </mat-icon>
@@ -30,12 +26,12 @@
           thumb_down
         </mat-icon>
         {{ reactions | dislikePipe }}
-      </button>
-      <button mat-stroked-button color="accent" class="comment-button">
+      </button>-->
+      <button *ngIf="isUserPost" (click)="deletePost()" mat-stroked-button color="accent" class="comment-button">
         <mat-icon class="material-icons-outlined">
-          chat
+          delete
         </mat-icon>
-        Hozzászólások
+        Törlés
       </button>
     </div>
   </mat-card-content>

@@ -1,8 +1,11 @@
 mat-card {
   margin: 8px 0;
-  background-color: #fff;
+  background: #3F51B5;
   box-shadow: none;
   border-radius: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .post-button {
@@ -11,7 +14,7 @@ mat-card {
   font-size: 20px;
   font-weight: bold;
   color: white;
-  background: #01BAEF;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 768px) {

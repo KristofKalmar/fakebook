@@ -41,7 +41,7 @@ h2 {
 
 .login-button {
   width: 100%;
-  background-color: #01BAEF !important;
+  background-color: #3F51B5 !important;
   color: white !important;
 }
 
@@ -64,7 +64,14 @@ mat-divider {
 .register-button {
   width: 100%;
   margin-top: 10px;
-  color: #01BAEF !important;
+  color: #3F51B5 !important;
+}
+
+.login-button:disabled {
+  width: 100%;
+  background: none !important;
+  border: 1px solid #3F51B5 !important;
+  color: #3F51B5 !important;
 }
 
 @media screen and (max-width: 768px) {

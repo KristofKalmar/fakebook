@@ -9,13 +9,17 @@
       <mat-icon>home</mat-icon>
       <span>Kezdőlap</span>
     </a>
-    <a mat-tab-link href="/friendrequests">
-      <mat-icon>group</mat-icon>
-      <span>Ismerősök</span>
-    </a>
     <a mat-tab-link href="/profile">
       <mat-icon>person</mat-icon>
       <span>Profil</span>
+    </a>
+    <a *ngIf="!isLoggedIn" mat-tab-link href="/login">
+      <mat-icon>login</mat-icon>
+      <span>Bejelentkezés</span>
+    </a>
+    <a *ngIf="isLoggedIn" mat-tab-link href="/login?logout=true">
+      <mat-icon>logout</mat-icon>
+      <span>Kijelentkezés</span>
     </a>
   </div>
   <div class="rightbar">

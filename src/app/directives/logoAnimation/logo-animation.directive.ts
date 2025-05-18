@@ -13,7 +13,7 @@ export class LogoAnimationDirective {
     this.el.nativeElement.style.left = '0px';
     this.el.nativeElement.style.width = '100vw';
     this.el.nativeElement.style.height = '100vh';
-    this.el.nativeElement.style.backgroundColor = '#01baef';
+    this.el.nativeElement.style.backgroundColor = '#3F51B5';
     this.el.nativeElement.style.backgroundImage = 'url(/assets/images/logo_bg.png)';
     this.el.nativeElement.style.backgroundSize = '64px 64px';
     this.el.nativeElement.style.backgroundRepeat = 'repeat';

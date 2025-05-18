@@ -3,18 +3,18 @@
   <mat-card class="login-card">
     <img ngSrc="/assets/images/logo_text.svg" class="logo-text" height="32" width="192"  alt="logo"/>
     <h2>Bejelentkezés</h2>
-    <form>
-      <mat-form-field appearance="outline" class="form-field">
+    <form [formGroup]="profileForm" (ngSubmit)="login()">
+      <mat-form-field required appearance="outline" class="form-field">
         <mat-label>E-mail</mat-label>
-        <input matInput type="text" placeholder="Felhasználónév">
+        <input matInput type="text" placeholder="Felhasználónév" formControlName="email">
       </mat-form-field>
 
-      <mat-form-field appearance="outline" class="form-field">
+      <mat-form-field required appearance="outline" class="form-field">
         <mat-label>Jelszó</mat-label>
-        <input matInput type="password" placeholder="Jelszó">
+        <input matInput type="password" placeholder="Jelszó" formControlName="password">
       </mat-form-field>
 
-      <button mat-raised-button color="primary" class="login-button">Bejelentkezés</button>
+      <button [disabled]="!profileForm.valid" type="submit" mat-raised-button color="primary" class="login-button">Bejelentkezés</button>
     </form>
     <div class="divider-container">
       <mat-divider></mat-divider>

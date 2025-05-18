@@ -3,23 +3,23 @@
   <mat-card class="login-card">
     <img ngSrc="/assets/images/logo_text.svg" class="logo-text" height="32" width="192"  alt="logo"/>
     <h2>Regisztráció</h2>
-    <form>
-      <mat-form-field appearance="outline" class="form-field">
+    <form [formGroup]="profileForm" (ngSubmit)="register()">
+      <mat-form-field required appearance="outline" class="form-field">
         <mat-label>E-mail</mat-label>
-        <input matInput type="text" placeholder="Felhasználónév">
+        <input matInput type="text" placeholder="E-mail" formControlName="email">
       </mat-form-field>
 
-      <mat-form-field appearance="outline" class="form-field">
+      <mat-form-field required appearance="outline" class="form-field">
         <mat-label>Teljes név</mat-label>
-        <input matInput type="password" placeholder="Jelszó">
+        <input matInput type="text" placeholder="Teljes név" formControlName="name">
       </mat-form-field>
 
-      <mat-form-field appearance="outline" class="form-field">
+      <mat-form-field required appearance="outline" class="form-field">
         <mat-label>Jelszó</mat-label>
-        <input matInput type="password" placeholder="Jelszó">
+        <input matInput type="password" placeholder="Jelszó" formControlName="password">
       </mat-form-field>
 
-      <button mat-raised-button color="primary" class="login-button">Regisztráció</button>
+      <button [disabled]="!profileForm.valid" mat-raised-button color="primary" class="login-button" type="submit">Regisztráció</button>
     </form>
     <div class="divider-container">
       <mat-divider></mat-divider>

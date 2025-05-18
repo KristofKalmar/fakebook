@@ -1,16 +1,20 @@
-import {Component, Input} from '@angular/core';
+import {Component, Injectable, Input, OnInit} from '@angular/core';
 import {MatCard, MatCardContent} from '@angular/material/card';
 import {MatIcon} from '@angular/material/icon';
 import {MatButton} from '@angular/material/button';
 import Post from '../../classes/Post';
-import Comment from '../../classes/Comment';
 import Reaction from '../../classes/Reaction';
 import User from '../../classes/User';
 import {NgIf} from '@angular/common';
 import {DatePipePipe} from '../../pipes/date/date-pipe.pipe';
 import {LikePipePipe} from '../../pipes/like/like-pipe.pipe';
 import {DislikePipePipe} from '../../pipes/dislike/dislike-pipe.pipe';
+import {Service} from '../../../service/service';
+import {Auth} from '@angular/fire/auth';
 
+@Injectable({
+  providedIn: 'root'
+})
 @Component({
   selector: 'app-post',
   imports: [
@@ -26,14 +30,32 @@ import {DislikePipePipe} from '../../pipes/dislike/dislike-pipe.pipe';
   templateUrl: './post.component.html',
   styleUrl: './post.component.css'
 })
-export class PostComponent {
-  @Input({ required: true }) user!: User;
-  @Input({ required: true }) post!: Post;
-  @Input({ required: true }) comments!: Comment[];
-  @Input({ required: true }) reactions!: Reaction[];
-  @Input({ required: true }) isFriends!: boolean;
+export class PostComponent implements OnInit {
+  @Input({ required: true }) postId!: string;
 
-  get dateString() {
+  constructor(private service: Service, private auth: Auth) {}
+
+  user: User = new User();
+  isUserPost: boolean = false;
+  post: Post = new Post();
+  reactions: Reaction[] = [];
+
+  ngOnInit() {
+    this.service.getPost(this.postId).then(data => {
+      this.isUserPost = data.post.userId === this.auth.currentUser?.uid;
+      this.post = data.post;
+      this.reactions = data.reactions;
+      this.user = data.user;
+    })
+  }
+
+  deletePost() {
+    this.service.deletePost(this.postId, this.post.attachment).then(() => {
+      window.location.reload();
+    })
+  }
+
+  /*get dateString() {
     const date = new Date(this.post.date);
     return date.getFullYear() + "." + date.getMonth() + 1 + "." + date.getDay() + " " + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
   }
@@ -60,5 +82,5 @@ export class PostComponent {
     })
 
     return disLikes;
-  }
+  }*/
 }

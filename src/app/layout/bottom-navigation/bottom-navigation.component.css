@@ -1,10 +1,21 @@
 nav {
   position: sticky;
-  top: 0;
-  background-color: #f9f9f9;
-  border-bottom: 1px solid #dbdbdb;
+  top: 16px;
   z-index: 100;
-  height: 80px;
+  height: 56px;
+  margin: 16px;
+  background-color: #3F51B5;
+  border-radius: 16px;
+  color: white;
+}
+
+span {
+  color: white;
+}
+
+.mat-icon {
+  fill: white;
+  color: white;
 }
 
 .mat-mdc-tab-link-container {
@@ -15,7 +26,7 @@ nav {
 .navbar {
   display: flex;
   flex-direction: row;
-  height: 80px;
+  height: 56px;
   align-items: center;
 }
 
@@ -28,7 +39,7 @@ span {
   flex-direction: row;
   align-items: center;
   width: 100%;
-  height: 80px;
+  height: 56px;
   padding: 0 16px;
 }
 
@@ -44,6 +55,12 @@ span {
 }
 
 @media screen and (max-width: 768px) {
+  nav {
+    margin: 0;
+    top: 0;
+    border-radius: 0;
+  }
+
   span {
     display: none;
   }
